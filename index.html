@@ -618,17 +618,6 @@
                   </div>
                 </div>
 
-                <!-- Type Your Question Text Box (Works in all 10 Languages) -->
-                <div class="space-y-1.5 pt-1">
-                  <div class="text-[10px] text-slate-400 font-medium uppercase" id="lbl-type-question">Or Type Your Question:</div>
-                  <div class="flex items-center gap-1.5">
-                    <input type="text" id="text-query-input" onkeydown="if(event.key==='Enter'){ handleTextQuery(); }" placeholder="Type your question here..." class="flex-1 bg-slate-800/80 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500">
-                    <button onclick="handleTextQuery()" id="btn-ask-text" class="px-3 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold shadow flex items-center gap-1.5">
-                      <i class="fa-solid fa-paper-plane text-[10px]"></i> <span id="lbl-btn-ask">Ask</span>
-                    </button>
-                  </div>
-                </div>
-
                 <!-- Conversation Response Box -->
                 <div id="voice-response-card" class="bg-cyan-950/40 border border-cyan-800/50 p-3 rounded-xl text-left text-xs space-y-1.5">
                   <div class="text-[10px] text-cyan-400 font-bold flex items-center gap-1.5">
@@ -958,20 +947,7 @@
         speechBoundary5Min: "Warning! You are 5 minutes away from crossing the maritime boundary line! Turn vessel around immediately!",
         speechBoundaryBreach: "Emergency warning! You have crossed the international boundary line! Loud siren activated! Turn back immediately!",
         speechHarbor: "Nearest safe harbor is Mandapam Fishery Jetty, bearing 254 degrees West, distance 6.8 nautical miles.",
-        speechSos: "Distress signal triggered! Your GPS coordinates have been sent to Indian Coast Guard Mandapam station via satellite.",
-        typeQuestionLabel: "Or Type Your Question:",
-        inputPlaceholder: "Type your question in any of the 10 languages...",
-        btnAsk: "Ask",
-        noAnswerFound: "I can help with weather, tomorrow's forecast, boundary distance, harbor, storm, fuel, engine trouble, GPS location, first aid, fishing zone, coast guard contact or SOS. Please ask about one of these topics.",
-        speechStorm: "Storm warning active! High waves and gale winds detected in your area. Return to harbor immediately and avoid open sea.",
-        speechFuel: "Estimated fuel remaining is sufficient for 4 hours of travel. Please conserve fuel and plan your return route now.",
-        speechEngine: "For engine trouble, stop the boat safely, check the fuel line and propeller for obstruction. If the engine does not start, press the SOS button for immediate rescue assistance.",
-        speechGps: "Your current GPS location is being tracked live and shared with Coast Guard Mandapam station via satellite and cellular network.",
-        speechFirstAid: "For injuries, apply first aid immediately: stop bleeding with a clean cloth, keep the person calm, and use the SOS button to alert the Coast Guard for medical evacuation.",
-        speechFishZone: "You are currently in a safe and approved fishing zone. Fish activity is favorable in the current coastal waters.",
-        speechCoastGuard: "Indian Coast Guard Mandapam station can be reached anytime through the SOS button. They monitor this zone 24 hours via satellite and radar.",
-        speechThanks: "You are welcome! Stay safe and have a good catch. I am here if you need any more help.",
-        speechGreeting: "Hello! I am your THIRAIX Maritime Safety Assistant. How can I help you today?"
+        speechSos: "Distress signal triggered! Your GPS coordinates have been sent to Indian Coast Guard Mandapam station via satellite."
       },
 
       ta: {
@@ -1070,20 +1046,7 @@
         speechBoundary5Min: "எச்சரிக்கை! நீங்கள் இன்னும் 5 நிமிடங்களில் கடல் எல்லையை கடக்க உள்ளீர்கள்! உடனடியாக படகை திருப்புங்கள்!",
         speechBoundaryBreach: "ஆபத்து! நீங்கள் சர்வதேச எல்லையை தாண்டிவிட்டீர்கள்! தொடர் அலாரம் ஒலிக்கிறது! உடனடியாக படகை திருப்புங்கள்!",
         speechHarbor: "அருகிலுள்ள பாதுகாப்பான துறைமுகம் மண்டபம் தளம். திசை 254 டிகிரி மேற்கு, தூரம் 6.8 கடல் மைல்.",
-        speechSos: "அவசர அபாய செய்தி கடலோர காவல்படைக்கு செயற்கைக்கோள் வழியாக அனுப்பப்பட்டது. மீட்பு படகு விரைகிறது.",
-        typeQuestionLabel: "அல்லது உங்கள் கேள்வியை தட்டச்சு செய்யவும்:",
-        inputPlaceholder: "உங்கள் கேள்வியை இங்கே தட்டச்சு செய்யவும்...",
-        btnAsk: "கேளுங்கள்",
-        noAnswerFound: "வானிலை, நாளை முன்னறிவிப்பு, எல்லை தூரம், துறைமுகம், புயல், எரிபொருள், இயந்திரக் கோளாறு, GPS இருப்பிடம், முதலுதவி, மீன்பிடி பகுதி, கடலோர காவல்படை தொடர்பு அல்லது SOS பற்றி என்னால் உதவ முடியும். தயவுசெய்து இவற்றில் ஒன்றைக் கேளுங்கள்.",
-        speechStorm: "புயல் எச்சரிக்கை செயலில் உள்ளது! உங்கள் பகுதியில் உயரமான அலைகள் மற்றும் பலத்த காற்று கண்டறியப்பட்டுள்ளது. உடனடியாக துறைமுகத்திற்குத் திரும்புங்கள்.",
-        speechFuel: "மீதமுள்ள எரிபொருள் 4 மணி நேர பயணத்திற்கு போதுமானது. தயவுசெய்து எரிபொருளை சிக்கனமாக பயன்படுத்தி திரும்பும் பயணத்தை திட்டமிடுங்கள்.",
-        speechEngine: "இயந்திரக் கோளாறு இருந்தால், படகை பாதுகாப்பாக நிறுத்தி எரிபொருள் கோட்டையும் ப்ரொப்பல்லரையும் சரிபார்க்கவும். இயந்திரம் தொடங்கவில்லை என்றால் உடனடியாக SOS பொத்தானை அழுத்தவும்.",
-        speechGps: "உங்கள் தற்போதைய GPS இருப்பிடம் நேரடியாக கண்காணிக்கப்பட்டு செயற்கைக்கோள் மற்றும் செல்லுலார் நெட்வொர்க் வழியாக கடலோர காவல்படை மண்டபம் நிலையத்திற்கு அனுப்பப்படுகிறது.",
-        speechFirstAid: "காயம் ஏற்பட்டால் உடனடியாக முதலுதவி அளிக்கவும்: சுத்தமான துணியால் இரத்தப்போக்கை நிறுத்தவும், நபரை அமைதியாக வைத்திருங்கள், மருத்துவ உதவிக்காக SOS பொத்தானை அழுத்தவும்.",
-        speechFishZone: "நீங்கள் தற்போது பாதுகாப்பான மற்றும் அனுமதிக்கப்பட்ட மீன்பிடி பகுதியில் உள்ளீர்கள். இந்த கடலோர நீரில் மீன் இயக்கம் சாதகமாக உள்ளது.",
-        speechCoastGuard: "இந்திய கடலோர காவல்படை மண்டபம் நிலையத்தை SOS பொத்தான் மூலம் எப்போது வேண்டுமானாலும் தொடர்பு கொள்ளலாம். அவர்கள் இந்த பகுதியை செயற்கைக்கோள் மற்றும் ரேடார் மூலம் 24 மணி நேரமும் கண்காணிக்கின்றனர்.",
-        speechThanks: "வரவேற்கிறேன்! பாதுகாப்பாக இருங்கள், நல்ல மீன் பிடியுங்கள். மேலும் உதவி தேவைப்பட்டால் நான் இங்கே இருக்கிறேன்.",
-        speechGreeting: "வணக்கம்! நான் உங்கள் THIRAIX கடல் பாதுகாப்பு உதவியாளர். இன்று உங்களுக்கு எப்படி உதவ முடியும்?"
+        speechSos: "அவசர அபாய செய்தி கடலோர காவல்படைக்கு செயற்கைக்கோள் வழியாக அனுப்பப்பட்டது. மீட்பு படகு விரைகிறது."
       },
 
       hi: {
@@ -1182,254 +1145,13 @@
         speechBoundary5Min: "चेतावनी! आप 5 मिनट में सीमा पार करने वाले हैं! तुरंत नाव वापस मोड़ें!",
         speechBoundaryBreach: "खतरा! अंतरराष्ट्रीय सीमा पार हो गई है! निरंतर सायरन चालू है! तुरंत वापस मोड़ें!",
         speechHarbor: "निकटतम सुरक्षित बंदरगाह मंडपम जेटी है, दूरी 6.8 समुद्री मील।",
-        speechSos: "संकट संकेत सक्रिय हुआ! आपके निर्देशांक तटरक्षक बल को भेज दिए गए हैं।",
-        typeQuestionLabel: "या अपना प्रश्न टाइप करें:",
-        inputPlaceholder: "अपना प्रश्न यहाँ टाइप करें...",
-        btnAsk: "पूछें",
-        noAnswerFound: "मैं मौसम, कल के पूर्वानुमान, सीमा दूरी, बंदरगाह, तूफ़ान, ईंधन, इंजन समस्या, GPS स्थान, प्राथमिक चिकित्सा, मछली पकड़ने का क्षेत्र, तटरक्षक संपर्क या SOS के बारे में मदद कर सकता हूँ। कृपया इनमें से कोई एक पूछें।",
-        speechStorm: "तूफ़ान चेतावनी सक्रिय! आपके क्षेत्र में ऊँची लहरें और तेज़ हवाएँ पाई गई हैं। तुरंत बंदरगाह लौटें।",
-        speechFuel: "बचा हुआ ईंधन 4 घंटे की यात्रा के लिए पर्याप्त है। कृपया ईंधन बचाएं और वापसी की योजना बनाएं।",
-        speechEngine: "इंजन में समस्या होने पर नाव को सुरक्षित रूप से रोकें और ईंधन लाइन व प्रोपेलर जांचें। यदि इंजन स्टार्ट न हो तो तुरंत SOS बटन दबाएं।",
-        speechGps: "आपका वर्तमान GPS स्थान लाइव ट्रैक किया जा रहा है और उपग्रह व सेलुलर नेटवर्क के माध्यम से तटरक्षक मंडपम स्टेशन को भेजा जा रहा है।",
-        speechFirstAid: "चोट लगने पर तुरंत प्राथमिक उपचार करें: साफ कपड़े से खून बहना रोकें, व्यक्ति को शांत रखें, चिकित्सा सहायता के लिए SOS बटन दबाएं।",
-        speechFishZone: "आप वर्तमान में एक सुरक्षित और अनुमोदित मछली पकड़ने वाले क्षेत्र में हैं। इस तटीय जल में मछली पकड़ना अनुकूल है।",
-        speechCoastGuard: "भारतीय तटरक्षक मंडपम स्टेशन से SOS बटन के माध्यम से कभी भी संपर्क किया जा सकता है। वे उपग्रह और रडार के माध्यम से 24 घंटे इस क्षेत्र की निगरानी करते हैं।",
-        speechThanks: "आपका स्वागत है! सुरक्षित रहें और अच्छी मछली पकड़ें। अधिक मदद चाहिए तो मैं यहाँ हूँ।",
-        speechGreeting: "नमस्ते! मैं आपका THIRAIX समुद्री सुरक्षा सहायक हूँ। आज मैं आपकी कैसे मदद कर सकता हूँ?"
+        speechSos: "संकट संकेत सक्रिय हुआ! आपके निर्देशांक तटरक्षक बल को भेज दिए गए हैं।"
       }
     };
 
-    // Dedicated Voice-Assistant Q&A translations for the remaining 7 languages.
-    // Any UI string not listed here automatically falls back to English via Object.assign below.
-    const I18N_VOICE_EXTRA = {
-      te: {
-        aiVoiceTitle: "THIRAIX AI వాయిస్ సహాయకుడు",
-        tapMicLabel: "మాట్లాడటానికి మైక్ నొక్కండి",
-        micListening: "వినుచున్నాను... ఇప్పుడు మీ ప్రశ్న చెప్పండి",
-        orClickQuestion: "AI వాయిస్ వినడానికి ప్రశ్నపై క్లిక్ చేయండి:",
-        qWeather: "\"ప్రస్తుత వాతావరణం మరియు అల ఎత్తు ఎంత?\"",
-        qTomorrow: "\"రేపటి వాతావరణ సూచన ఏమిటి?\"",
-        qBoundary: "\"సరిహద్దు రేఖకు దూరం ఎంత?\"",
-        qHarbor: "\"సమీప సురక్షిత రేవు ఎక్కడ ఉంది?\"",
-        assistantReplyTitle: "THIRAIX AI సముద్ర వాయిస్ సహాయకుడు:",
-        assistantWelcome: "నమస్కారం! నేను మీ THIRAIX సముద్ర భద్రతా సహాయకుడిని. వాతావరణం, సరిహద్దు, రేవు, తుఫాను, ఇంధనం, ఇంజిన్, GPS, ప్రథమ చికిత్స లేదా SOS గురించి అడగండి — నేను ప్రతి సమస్యకు సహాయం చేయగలను.",
-        typeQuestionLabel: "లేదా మీ ప్రశ్నను టైప్ చేయండి:",
-        inputPlaceholder: "మీ ప్రశ్నను ఇక్కడ టైప్ చేయండి...",
-        btnAsk: "అడగండి",
-        noAnswerFound: "నేను వాతావరణం, రేపటి సూచన, సరిహద్దు దూరం, రేవు, తుఫాను, ఇంధనం, ఇంజిన్ సమస్య, GPS స్థానం, ప్రథమ చికిత్స, చేపల వేట ప్రాంతం, కోస్ట్ గార్డ్ సంప్రదింపు లేదా SOS గురించి సహాయం చేయగలను. దయచేసి వీటిలో ఒకటి అడగండి.",
-        speechWeather: "ప్రస్తుత వాతావరణం అనుకూలంగా ఉంది. అల ఎత్తు 1.3 మీటర్లు, గాలి వేగం 18 నాట్స్. చేపలు పట్టడానికి సురక్షితం.",
-        speechTomorrow: "రేపటి సూచన: ఉష్ణోగ్రత 31 డిగ్రీలు, గాలి 24 నాట్స్, అలలు 2.1 మీటర్లు. సాయంత్రం 5 గంటలలోపు తీరానికి తిరిగి రండి.",
-        speechBoundarySafe: "అంతర్జాతీయ సరిహద్దుకు ప్రస్తుత దూరం 1,850 మీటర్లు. మీరు భారత జలాల్లో సురక్షితంగా ఉన్నారు.",
-        speechBoundary5Min: "హెచ్చరిక! మీరు 5 నిమిషాల్లో సముద్ర సరిహద్దును దాటబోతున్నారు! వెంటనే పడవను వెనక్కు తిప్పండి!",
-        speechBoundaryBreach: "అత్యవసర హెచ్చరిక! మీరు అంతర్జాతీయ సరిహద్దును దాటారు! సైరన్ మోగుతోంది! వెంటనే వెనక్కు తిరగండి!",
-        speechHarbor: "సమీప సురక్షిత రేవు మండపం మత్స్య జెట్టీ, దిశ 254 డిగ్రీలు పడమర, దూరం 6.8 నాటికల్ మైళ్లు.",
-        speechSos: "అత్యవసర సంకేతం పంపబడింది! మీ GPS స్థానం ఉపగ్రహం ద్వారా భారత కోస్ట్ గార్డ్ మండపం స్టేషన్‌కు పంపబడింది.",
-        speechStorm: "తుఫాను హెచ్చరిక సక్రియం! మీ ప్రాంతంలో పెద్ద అలలు మరియు బలమైన గాలులు గుర్తించబడ్డాయి. వెంటనే రేవుకు తిరిగి వెళ్లండి.",
-        speechFuel: "మిగిలిన ఇంధనం 4 గంటల ప్రయాణానికి సరిపోతుంది. దయచేసి ఇంధనాన్ని పొదుపుగా వాడి తిరుగు ప్రయాణ ప్రణాళిక వేసుకోండి.",
-        speechEngine: "ఇంజిన్ సమస్య వస్తే, పడవను సురక్షితంగా ఆపి ఇంధన లైన్ మరియు ప్రొపెల్లర్‌ను తనిఖీ చేయండి. ఇంజిన్ స్టార్ట్ కాకపోతే వెంటనే SOS బటన్ నొక్కండి.",
-        speechGps: "మీ ప్రస్తుత GPS స్థానం ప్రత్యక్షంగా ట్రాక్ చేయబడుతూ ఉపగ్రహం మరియు సెల్యులార్ నెట్‌వర్క్ ద్వారా కోస్ట్ గార్డ్ మండపం స్టేషన్‌కు పంపబడుతోంది.",
-        speechFirstAid: "గాయాలైతే వెంటనే ప్రథమ చికిత్స చేయండి: శుభ్రమైన గుడ్డతో రక్తస్రావం ఆపండి, వ్యక్తిని ప్రశాంతంగా ఉంచండి, వైద్య సహాయం కోసం SOS బటన్ నొక్కండి.",
-        speechFishZone: "మీరు ప్రస్తుతం సురక్షితమైన మరియు అనుమతించబడిన చేపల వేట ప్రాంతంలో ఉన్నారు. ఈ తీర జలాల్లో చేపల కదలిక అనుకూలంగా ఉంది.",
-        speechCoastGuard: "భారత కోస్ట్ గార్డ్ మండపం స్టేషన్‌ను SOS బటన్ ద్వారా ఎప్పుడైనా సంప్రదించవచ్చు. వారు ఈ ప్రాంతాన్ని ఉపగ్రహం మరియు రాడార్ ద్వారా 24 గంటలూ పర్యవేక్షిస్తారు.",
-        speechThanks: "మీకు స్వాగతం! సురక్షితంగా ఉండండి, మంచి చేపలు పట్టండి. మీకు మరింత సహాయం కావాలంటే నేను ఇక్కడ ఉన్నాను.",
-        speechGreeting: "నమస్కారం! నేను మీ THIRAIX సముద్ర భద్రతా సహాయకుడిని. ఈరోజు మీకు ఎలా సహాయం చేయగలను?"
-      },
-      kn: {
-        aiVoiceTitle: "THIRAIX AI ಧ್ವನಿ ಸಹಾಯಕ",
-        tapMicLabel: "ಮಾತನಾಡಲು ಮೈಕ್ ಒತ್ತಿ",
-        micListening: "ಕೇಳುತ್ತಿದ್ದೇನೆ... ಈಗ ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಹೇಳಿ",
-        orClickQuestion: "AI ಧ್ವನಿ ಕೇಳಲು ಪ್ರಶ್ನೆಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ:",
-        qWeather: "\"ಪ್ರಸ್ತುತ ಹವಾಮಾನ ಮತ್ತು ಅಲೆಗಳ ಸ್ಥಿತಿ ಏನು?\"",
-        qTomorrow: "\"ನಾಳಿನ ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ ಏನು?\"",
-        qBoundary: "\"ಗಡಿ ರೇಖೆಗೆ ದೂರ ಎಷ್ಟು?\"",
-        qHarbor: "\"ಹತ್ತಿರದ ಸುರಕ್ಷಿತ ಬಂದರು ಎಲ್ಲಿದೆ?\"",
-        assistantReplyTitle: "THIRAIX AI ಸಮುದ್ರ ಧ್ವನಿ ಸಹಾಯಕ:",
-        assistantWelcome: "ನಮಸ್ಕಾರ! ನಾನು ನಿಮ್ಮ THIRAIX ಕಡಲ ಸುರಕ್ಷತಾ ಸಹಾಯಕ. ಹವಾಮಾನ, ಗಡಿ, ಬಂದರು, ಚಂಡಮಾರುತ, ಇಂಧನ, ಎಂಜಿನ್, GPS, ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ಅಥವಾ SOS ಬಗ್ಗೆ ಕೇಳಿ — ನಾನು ಪ್ರತಿ ಸಮಸ್ಯೆಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ.",
-        typeQuestionLabel: "ಅಥವಾ ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ:",
-        inputPlaceholder: "ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ...",
-        btnAsk: "ಕೇಳಿ",
-        noAnswerFound: "ನಾನು ಹವಾಮಾನ, ನಾಳಿನ ಮುನ್ಸೂಚನೆ, ಗಡಿ ದೂರ, ಬಂದರು, ಚಂಡಮಾರುತ, ಇಂಧನ, ಎಂಜಿನ್ ಸಮಸ್ಯೆ, GPS ಸ್ಥಳ, ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ, ಮೀನುಗಾರಿಕೆ ವಲಯ, ಕೋಸ್ಟ್ ಗಾರ್ಡ್ ಸಂಪರ್ಕ ಅಥವಾ SOS ಬಗ್ಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ. ದಯವಿಟ್ಟು ಇವುಗಳಲ್ಲಿ ಒಂದನ್ನು ಕೇಳಿ.",
-        speechWeather: "ಪ್ರಸ್ತುತ ಹವಾಮಾನ ಅನುಕೂಲಕರವಾಗಿದೆ. ಅಲೆಯ ಎತ್ತರ 1.3 ಮೀಟರ್, ಗಾಳಿ ವೇಗ 18 ನಾಟ್ಸ್. ಮೀನುಗಾರಿಕೆಗೆ ಸುರಕ್ಷಿತ.",
-        speechTomorrow: "ನಾಳಿನ ಮುನ್ಸೂಚನೆ: ತಾಪಮಾನ 31 ಡಿಗ್ರಿ, ಗಾಳಿ 24 ನಾಟ್ಸ್, ಅಲೆಗಳು 2.1 ಮೀಟರ್. ಸಂಜೆ 5 ಗಂಟೆಯೊಳಗೆ ದಡಕ್ಕೆ ಹಿಂತಿರುಗಿ.",
-        speechBoundarySafe: "ಅಂತರರಾಷ್ಟ್ರೀಯ ಗಡಿಗೆ ಪ್ರಸ್ತುತ ದೂರ 1,850 ಮೀಟರ್. ನೀವು ಸುರಕ್ಷಿತವಾಗಿ ಭಾರತೀಯ ಜಲಗಡಿಯೊಳಗಿದ್ದೀರಿ.",
-        speechBoundary5Min: "ಎಚ್ಚರಿಕೆ! ನೀವು 5 ನಿಮಿಷಗಳಲ್ಲಿ ಕಡಲ ಗಡಿ ದಾಟಲಿದ್ದೀರಿ! ತಕ್ಷಣ ದೋಣಿಯನ್ನು ಹಿಂತಿರುಗಿಸಿ!",
-        speechBoundaryBreach: "ತುರ್ತು ಎಚ್ಚರಿಕೆ! ನೀವು ಅಂತರರಾಷ್ಟ್ರೀಯ ಗಡಿ ದಾಟಿದ್ದೀರಿ! ಸೈರನ್ ಮೊಳಗುತ್ತಿದೆ! ತಕ್ಷಣ ಹಿಂತಿರುಗಿ!",
-        speechHarbor: "ಹತ್ತಿರದ ಸುರಕ್ಷಿತ ಬಂದರು ಮಂಡಪಂ ಮೀನುಗಾರಿಕಾ ಜೆಟ್ಟಿ, ದಿಕ್ಕು 254 ಡಿಗ್ರಿ ಪಶ್ಚಿಮ, ದೂರ 6.8 ನಾಟಿಕಲ್ ಮೈಲಿ.",
-        speechSos: "ತುರ್ತು ಸಂಕೇತ ಕಳುಹಿಸಲಾಗಿದೆ! ನಿಮ್ಮ GPS ಸ್ಥಳವನ್ನು ಉಪಗ್ರಹದ ಮೂಲಕ ಭಾರತೀಯ ಕೋಸ್ಟ್ ಗಾರ್ಡ್ ಮಂಡಪಂ ಠಾಣೆಗೆ ಕಳುಹಿಸಲಾಗಿದೆ.",
-        speechStorm: "ಚಂಡಮಾರುತ ಎಚ್ಚರಿಕೆ ಸಕ್ರಿಯ! ನಿಮ್ಮ ಪ್ರದೇಶದಲ್ಲಿ ಎತ್ತರದ ಅಲೆಗಳು ಮತ್ತು ಬಲವಾದ ಗಾಳಿ ಪತ್ತೆಯಾಗಿದೆ. ತಕ್ಷಣ ಬಂದರಿಗೆ ಹಿಂತಿರುಗಿ.",
-        speechFuel: "ಉಳಿದ ಇಂಧನ 4 ಗಂಟೆ ಪ್ರಯಾಣಕ್ಕೆ ಸಾಕಾಗುತ್ತದೆ. ದಯವಿಟ್ಟು ಇಂಧನ ಉಳಿಸಿ ಹಿಂತಿರುಗುವ ಯೋಜನೆ ಮಾಡಿ.",
-        speechEngine: "ಎಂಜಿನ್ ಸಮಸ್ಯೆಯಿದ್ದರೆ, ದೋಣಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ನಿಲ್ಲಿಸಿ ಇಂಧನ ಮಾರ್ಗ ಮತ್ತು ಪ್ರೊಪೆಲ್ಲರ್ ಪರಿಶೀಲಿಸಿ. ಎಂಜಿನ್ ಸ್ಟಾರ್ಟ್ ಆಗದಿದ್ದರೆ ತಕ್ಷಣ SOS ಬಟನ್ ಒತ್ತಿ.",
-        speechGps: "ನಿಮ್ಮ ಪ್ರಸ್ತುತ GPS ಸ್ಥಳವನ್ನು ನೇರವಾಗಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ ಉಪಗ್ರಹ ಮತ್ತು ಸೆಲ್ಯುಲಾರ್ ಜಾಲದ ಮೂಲಕ ಕೋಸ್ಟ್ ಗಾರ್ಡ್ ಮಂಡಪಂ ಠಾಣೆಗೆ ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ.",
-        speechFirstAid: "ಗಾಯಗಳಾದರೆ ತಕ್ಷಣ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ನೀಡಿ: ಸ್ವಚ್ಛ ಬಟ್ಟೆಯಿಂದ ರಕ್ತಸ್ರಾವ ನಿಲ್ಲಿಸಿ, ವ್ಯಕ್ತಿಯನ್ನು ಶಾಂತವಾಗಿಡಿ, ವೈದ್ಯಕೀಯ ಸಹಾಯಕ್ಕಾಗಿ SOS ಬಟನ್ ಒತ್ತಿ.",
-        speechFishZone: "ನೀವು ಪ್ರಸ್ತುತ ಸುರಕ್ಷಿತ ಮತ್ತು ಅನುಮೋದಿತ ಮೀನುಗಾರಿಕಾ ವಲಯದಲ್ಲಿದ್ದೀರಿ. ಈ ಕರಾವಳಿ ಜಲದಲ್ಲಿ ಮೀನುಗಾರಿಕೆ ಚಟುವಟಿಕೆ ಅನುಕೂಲಕರವಾಗಿದೆ.",
-        speechCoastGuard: "ಭಾರತೀಯ ಕೋಸ್ಟ್ ಗಾರ್ಡ್ ಮಂಡಪಂ ಠಾಣೆಯನ್ನು SOS ಬಟನ್ ಮೂಲಕ ಯಾವಾಗ ಬೇಕಾದರೂ ಸಂಪರ್ಕಿಸಬಹುದು. ಅವರು ಈ ವಲಯವನ್ನು ಉಪಗ್ರಹ ಮತ್ತು ರಾಡಾರ್ ಮೂಲಕ 24 ಗಂಟೆ ಕಣ್ಗಾವಲು ಮಾಡುತ್ತಾರೆ.",
-        speechThanks: "ಸ್ವಾಗತ! ಸುರಕ್ಷಿತವಾಗಿರಿ, ಉತ್ತಮ ಮೀನುಗಾರಿಕೆ ಮಾಡಿ. ಇನ್ನಷ್ಟು ಸಹಾಯ ಬೇಕಾದರೆ ನಾನು ಇಲ್ಲಿದ್ದೇನೆ.",
-        speechGreeting: "ನಮಸ್ಕಾರ! ನಾನು ನಿಮ್ಮ THIRAIX ಕಡಲ ಸುರಕ್ಷತಾ ಸಹಾಯಕ. ಇಂದು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಲಿ?"
-      },
-      ml: {
-        aiVoiceTitle: "THIRAIX AI വോയ്സ് അസിസ്റ്റന്റ്",
-        tapMicLabel: "സംസാരിക്കാൻ മൈക്ക് അമർത്തുക",
-        micListening: "കേൾക്കുന്നു... ഇപ്പോൾ നിങ്ങളുടെ ചോദ്യം പറയുക",
-        orClickQuestion: "AI ശബ്ദം കേൾക്കാൻ ഒരു ചോദ്യത്തിൽ ക്ലിക്ക് ചെയ്യുക:",
-        qWeather: "\"നിലവിലെ കാലാവസ്ഥയും തിരമാല അവസ്ഥയും എന്താണ്?\"",
-        qTomorrow: "\"നാളത്തെ കാലാവസ്ഥാ പ്രവചനം എന്താണ്?\"",
-        qBoundary: "\"അതിർത്തി രേഖയിലേക്കുള്ള ദൂരം എത്രയാണ്?\"",
-        qHarbor: "\"അടുത്തുള്ള സുരക്ഷിത തുറമുഖം എവിടെയാണ്?\"",
-        assistantReplyTitle: "THIRAIX AI സമുദ്ര വോയ്സ് അസിസ്റ്റന്റ്:",
-        assistantWelcome: "നമസ്കാരം! ഞാൻ നിങ്ങളുടെ THIRAIX സമുദ്ര സുരക്ഷാ സഹായി ആണ്. കാലാവസ്ഥ, അതിർത്തി, തുറമുഖം, കൊടുങ്കാറ്റ്, ഇന്ധനം, എഞ്ചിൻ, GPS, പ്രഥമശുശ്രൂഷ അല്ലെങ്കിൽ SOS എന്നിവയെക്കുറിച്ച് ചോദിക്കൂ — എല്ലാ പ്രശ്നത്തിനും ഞാൻ സഹായിക്കാം.",
-        typeQuestionLabel: "അല്ലെങ്കിൽ നിങ്ങളുടെ ചോദ്യം ടൈപ്പ് ചെയ്യുക:",
-        inputPlaceholder: "നിങ്ങളുടെ ചോദ്യം ഇവിടെ ടൈപ്പ് ചെയ്യുക...",
-        btnAsk: "ചോദിക്കുക",
-        noAnswerFound: "കാലാവസ്ഥ, നാളത്തെ പ്രവചനം, അതിർത്തി ദൂരം, തുറമുഖം, കൊടുങ്കാറ്റ്, ഇന്ധനം, എഞ്ചിൻ പ്രശ്നം, GPS സ്ഥാനം, പ്രഥമശുശ്രൂഷ, മത്സ്യബന്ധന മേഖല, കോസ്റ്റ് ഗാർഡ് ബന്ധപ്പെടൽ അല്ലെങ്കിൽ SOS എന്നിവയിൽ എനിക്ക് സഹായിക്കാൻ കഴിയും. ദയവായി ഇവയിലൊന്ന് ചോദിക്കുക.",
-        speechWeather: "നിലവിലെ കാലാവസ്ഥ അനുകൂലമാണ്. തിരമാല ഉയരം 1.3 മീറ്റർ, കാറ്റിന്റെ വേഗത 18 നോട്ട്സ്. മീൻപിടിത്തത്തിന് സുരക്ഷിതം.",
-        speechTomorrow: "നാളത്തെ പ്രവചനം: താപനില 31 ഡിഗ്രി, കാറ്റ് 24 നോട്ട്സ്, തിരമാല 2.1 മീറ്റർ. വൈകുന്നേരം 5 മണിക്ക് മുൻപ് തീരത്ത് തിരിച്ചെത്തുക.",
-        speechBoundarySafe: "അന്താരാഷ്ട്ര അതിർത്തിയിലേക്കുള്ള നിലവിലെ ദൂരം 1,850 മീറ്റർ ആണ്. നിങ്ങൾ ഇന്ത്യൻ ജലാതിർത്തിക്കുള്ളിൽ സുരക്ഷിതരാണ്.",
-        speechBoundary5Min: "മുന്നറിയിപ്പ്! നിങ്ങൾ 5 മിനിറ്റിനുള്ളിൽ സമുദ്ര അതിർത്തി കടക്കാൻ പോകുന്നു! ഉടൻ ബോട്ട് തിരിച്ചുവിടുക!",
-        speechBoundaryBreach: "അടിയന്തര മുന്നറിയിപ്പ്! നിങ്ങൾ അന്താരാഷ്ട്ര അതിർത്തി കടന്നു! സൈറൺ മുഴങ്ങുന്നു! ഉടൻ തിരിച്ചുപോകുക!",
-        speechHarbor: "അടുത്തുള്ള സുരക്ഷിത തുറമുഖം മണ്ഡപം ഫിഷറി ജെട്ടി ആണ്, ദിശ 254 ഡിഗ്രി പടിഞ്ഞാറ്, ദൂരം 6.8 നോട്ടിക്കൽ മൈൽ.",
-        speechSos: "അടിയന്തര സിഗ്നൽ അയച്ചു! നിങ്ങളുടെ GPS സ്ഥാനം ഉപഗ്രഹം വഴി ഇന്ത്യൻ കോസ്റ്റ് ഗാർഡ് മണ്ഡപം സ്റ്റേഷനിലേക്ക് അയച്ചിട്ടുണ്ട്.",
-        speechStorm: "കൊടുങ്കാറ്റ് മുന്നറിയിപ്പ് സജീവമാണ്! നിങ്ങളുടെ പ്രദേശത്ത് ഉയർന്ന തിരമാലകളും ശക്തമായ കാറ്റും കണ്ടെത്തി. ഉടൻ തുറമുഖത്തേക്ക് മടങ്ങുക.",
-        speechFuel: "ബാക്കിയുള്ള ഇന്ധനം 4 മണിക്കൂർ യാത്രയ്ക്ക് മതിയാകും. ദയവായി ഇന്ധനം ലാഭിച്ച് മടക്കയാത്ര ആസൂത്രണം ചെയ്യുക.",
-        speechEngine: "എഞ്ചിൻ പ്രശ്നമുണ്ടെങ്കിൽ, ബോട്ട് സുരക്ഷിതമായി നിർത്തി ഇന്ധന ലൈനും പ്രൊപ്പല്ലറും പരിശോധിക്കുക. എഞ്ചിൻ സ്റ്റാർട്ട് ആകുന്നില്ലെങ്കിൽ ഉടൻ SOS ബട്ടൺ അമർത്തുക.",
-        speechGps: "നിങ്ങളുടെ നിലവിലെ GPS സ്ഥാനം തത്സമയം ട്രാക്ക് ചെയ്ത് ഉപഗ്രഹത്തിലൂടെയും സെല്ലുലാർ ശൃംഖലയിലൂടെയും കോസ്റ്റ് ഗാർഡ് മണ്ഡപം സ്റ്റേഷനിലേക്ക് അയക്കുന്നു.",
-        speechFirstAid: "പരിക്കേറ്റാൽ ഉടൻ പ്രഥമശുശ്രൂഷ നൽകുക: വൃത്തിയുള്ള തുണികൊണ്ട് രക്തസ്രാവം നിർത്തുക, വ്യക്തിയെ ശാന്തമായി നിർത്തുക, വൈദ്യസഹായത്തിന് SOS ബട്ടൺ അമർത്തുക.",
-        speechFishZone: "നിങ്ങൾ ഇപ്പോൾ സുരക്ഷിതവും അംഗീകൃതവുമായ മത്സ്യബന്ധന മേഖലയിലാണ്. ഈ തീരദേശ ജലത്തിൽ മത്സ്യബന്ധനം അനുകൂലമാണ്.",
-        speechCoastGuard: "ഇന്ത്യൻ കോസ്റ്റ് ഗാർഡ് മണ്ഡപം സ്റ്റേഷനെ SOS ബട്ടൺ വഴി എപ്പോൾ വേണമെങ്കിലും ബന്ധപ്പെടാം. അവർ ഈ മേഖല ഉപഗ്രഹത്തിലൂടെയും റഡാറിലൂടെയും 24 മണിക്കൂറും നിരീക്ഷിക്കുന്നു.",
-        speechThanks: "സ്വാഗതം! സുരക്ഷിതരായിരിക്കുക, നല്ല മീൻപിടിത്തം ആശംസിക്കുന്നു. കൂടുതൽ സഹായം വേണമെങ്കിൽ ഞാൻ ഇവിടെയുണ്ട്.",
-        speechGreeting: "നമസ്കാരം! ഞാൻ നിങ്ങളുടെ THIRAIX സമുദ്ര സുരക്ഷാ സഹായി ആണ്. ഇന്ന് നിങ്ങളെ എങ്ങനെ സഹായിക്കാം?"
-      },
-      bn: {
-        aiVoiceTitle: "THIRAIX AI ভয়েস সহকারী",
-        tapMicLabel: "কথা বলতে মাইক্রোফোনে চাপুন",
-        micListening: "শুনছি... এখন আপনার প্রশ্ন বলুন",
-        orClickQuestion: "AI ভয়েস শুনতে একটি প্রশ্নে ক্লিক করুন:",
-        qWeather: "\"বর্তমান আবহাওয়া এবং ঢেউয়ের অবস্থা কী?\"",
-        qTomorrow: "\"আগামীকালের আবহাওয়ার পূর্বাভাস কী?\"",
-        qBoundary: "\"সীমান্ত রেখা থেকে দূরত্ব কত?\"",
-        qHarbor: "\"নিকটতম নিরাপদ বন্দর কোথায়?\"",
-        assistantReplyTitle: "THIRAIX AI সামুদ্রিক ভয়েস সহকারী:",
-        assistantWelcome: "নমস্কার! আমি আপনার THIRAIX সামুদ্রিক নিরাপত্তা সহকারী। আবহাওয়া, সীমান্ত, বন্দর, ঝড়, জ্বালানি, ইঞ্জিন, GPS, প্রাথমিক চিকিৎসা বা SOS সম্পর্কে জিজ্ঞাসা করুন — আমি প্রতিটি সমস্যায় সাহায্য করতে পারি।",
-        typeQuestionLabel: "অথবা আপনার প্রশ্ন টাইপ করুন:",
-        inputPlaceholder: "এখানে আপনার প্রশ্ন টাইপ করুন...",
-        btnAsk: "জিজ্ঞাসা করুন",
-        noAnswerFound: "আমি আবহাওয়া, আগামীকালের পূর্বাভাস, সীমান্ত দূরত্ব, বন্দর, ঝড়, জ্বালানি, ইঞ্জিন সমস্যা, GPS অবস্থান, প্রাথমিক চিকিৎসা, মাছ ধরার এলাকা, কোস্ট গার্ড যোগাযোগ বা SOS সম্পর্কে সাহায্য করতে পারি। অনুগ্রহ করে এর মধ্যে একটি জিজ্ঞাসা করুন।",
-        speechWeather: "বর্তমান আবহাওয়া অনুকূল। ঢেউয়ের উচ্চতা ১.৩ মিটার, বাতাসের গতি ১৮ নট। মাছ ধরার জন্য নিরাপদ।",
-        speechTomorrow: "আগামীকালের পূর্বাভাস: তাপমাত্রা ৩১ ডিগ্রি, বাতাস ২৪ নট, ঢেউ ২.১ মিটার। বিকেল ৫টার আগে তীরে ফিরুন।",
-        speechBoundarySafe: "আন্তর্জাতিক সীমান্তের বর্তমান দূরত্ব ১,৮৫০ মিটার। আপনি নিরাপদে ভারতীয় জলসীমার মধ্যে আছেন।",
-        speechBoundary5Min: "সতর্কতা! আপনি ৫ মিনিটের মধ্যে সমুদ্র সীমান্ত অতিক্রম করতে চলেছেন! অবিলম্বে নৌকা ঘুরিয়ে নিন!",
-        speechBoundaryBreach: "জরুরি সতর্কতা! আপনি আন্তর্জাতিক সীমান্ত অতিক্রম করেছেন! সাইরেন বাজছে! অবিলম্বে ফিরে যান!",
-        speechHarbor: "নিকটতম নিরাপদ বন্দর মন্ডপম মৎস্যজীবী জেটি, দিক ২৫৪ ডিগ্রি পশ্চিম, দূরত্ব ৬.৮ নটিক্যাল মাইল।",
-        speechSos: "জরুরি সংকেত পাঠানো হয়েছে! আপনার GPS অবস্থান স্যাটেলাইটের মাধ্যমে ভারতীয় কোস্ট গার্ড মন্ডপম স্টেশনে পাঠানো হয়েছে।",
-        speechStorm: "ঝড়ের সতর্কতা সক্রিয়! আপনার এলাকায় উঁচু ঢেউ এবং প্রবল ঝড়ো বাতাস শনাক্ত হয়েছে। অবিলম্বে বন্দরে ফিরে যান।",
-        speechFuel: "অবশিষ্ট জ্বালানি ৪ ঘণ্টার যাত্রার জন্য যথেষ্ট। অনুগ্রহ করে জ্বালানি সাশ্রয় করুন এবং ফিরতি যাত্রার পরিকল্পনা করুন।",
-        speechEngine: "ইঞ্জিনে সমস্যা হলে, নৌকা নিরাপদে থামান এবং জ্বালানি লাইন ও প্রপেলার পরীক্ষা করুন। ইঞ্জিন চালু না হলে অবিলম্বে SOS বাটন চাপুন।",
-        speechGps: "আপনার বর্তমান GPS অবস্থান সরাসরি ট্র্যাক করা হচ্ছে এবং স্যাটেলাইট ও সেলুলার নেটওয়ার্কের মাধ্যমে কোস্ট গার্ড মন্ডপম স্টেশনে পাঠানো হচ্ছে।",
-        speechFirstAid: "আঘাত লাগলে অবিলম্বে প্রাথমিক চিকিৎসা দিন: পরিষ্কার কাপড় দিয়ে রক্তপাত বন্ধ করুন, ব্যক্তিকে শান্ত রাখুন, চিকিৎসা সহায়তার জন্য SOS বাটন চাপুন।",
-        speechFishZone: "আপনি বর্তমানে একটি নিরাপদ এবং অনুমোদিত মাছ ধরার এলাকায় আছেন। এই উপকূলীয় জলে মাছ ধরার কার্যক্রম অনুকূল।",
-        speechCoastGuard: "ভারতীয় কোস্ট গার্ড মন্ডপম স্টেশনের সাথে SOS বাটনের মাধ্যমে যেকোনো সময় যোগাযোগ করা যায়। তারা স্যাটেলাইট ও রাডারের মাধ্যমে ২৪ ঘণ্টা এই এলাকা পর্যবেক্ষণ করে।",
-        speechThanks: "স্বাগতম! নিরাপদে থাকুন এবং ভালো মাছ ধরুন। আরও সাহায্যের প্রয়োজন হলে আমি এখানে আছি।",
-        speechGreeting: "নমস্কার! আমি আপনার THIRAIX সামুদ্রিক নিরাপত্তা সহকারী। আজ আপনাকে কীভাবে সাহায্য করতে পারি?"
-      },
-      or: {
-        aiVoiceTitle: "THIRAIX AI ଭଏସ୍ ସହାୟକ",
-        tapMicLabel: "କଥା କହିବାକୁ ମାଇକ୍ ଦବାନ୍ତୁ",
-        micListening: "ଶୁଣୁଛି... ବର୍ତ୍ତମାନ ଆପଣଙ୍କ ପ୍ରଶ୍ନ କୁହନ୍ତୁ",
-        orClickQuestion: "AI ସ୍ୱର ଶୁଣିବାକୁ ଏକ ପ୍ରଶ୍ନ ଉପରେ କ୍ଲିକ୍ କରନ୍ତୁ:",
-        qWeather: "\"ବର୍ତ୍ତମାନର ପାଣିପାଗ ଏବଂ ଢେଉ ଅବସ୍ଥା କ'ଣ?\"",
-        qTomorrow: "\"ଆସନ୍ତାକାଲିର ପାଣିପାଗ ପୂର୍ବାନୁମାନ କ'ଣ?\"",
-        qBoundary: "\"ସୀମା ରେଖାରୁ ଦୂରତା କେତେ?\"",
-        qHarbor: "\"ନିକଟତମ ସୁରକ୍ଷିତ ବନ୍ଦର କେଉଁଠାରେ?\"",
-        assistantReplyTitle: "THIRAIX AI ସାମୁଦ୍ରିକ ଭଏସ୍ ସହାୟକ:",
-        assistantWelcome: "ନମସ୍କାର! ମୁଁ ଆପଣଙ୍କର THIRAIX ସାମୁଦ୍ରିକ ସୁରକ୍ଷା ସହାୟକ। ପାଣିପାଗ, ସୀମା, ବନ୍ଦର, ଝଡ଼, ଇନ୍ଧନ, ଇଞ୍ଜିନ୍, GPS, ପ୍ରାଥମିକ ଚିକିତ୍ସା କିମ୍ବା SOS ବିଷୟରେ ପଚାରନ୍ତୁ — ମୁଁ ପ୍ରତ୍ୟେକ ସମସ୍ୟାରେ ସାହାଯ୍ୟ କରିପାରିବି।",
-        typeQuestionLabel: "କିମ୍ବା ଆପଣଙ୍କ ପ୍ରଶ୍ନ ଟାଇପ୍ କରନ୍ତୁ:",
-        inputPlaceholder: "ଆପଣଙ୍କ ପ୍ରଶ୍ନ ଏଠାରେ ଟାଇପ୍ କରନ୍ତୁ...",
-        btnAsk: "ପଚାରନ୍ତୁ",
-        noAnswerFound: "ମୁଁ ପାଣିପାଗ, ଆସନ୍ତାକାଲିର ପୂର୍ବାନୁମାନ, ସୀମା ଦୂରତା, ବନ୍ଦର, ଝଡ଼, ଇନ୍ଧନ, ଇଞ୍ଜିନ୍ ସମସ୍ୟା, GPS ଅବସ୍ଥିତି, ପ୍ରାଥମିକ ଚିକିତ୍ସା, ମତ୍ସ୍ୟଚାଷ କ୍ଷେତ୍ର, କୋଷ୍ଟ ଗାର୍ଡ ସମ୍ପର୍କ କିମ୍ବା SOS ବିଷୟରେ ସାହାଯ୍ୟ କରିପାରିବି। ଦୟାକରି ଏଥିମଧ୍ୟରୁ ଗୋଟିଏ ପଚାରନ୍ତୁ।",
-        speechWeather: "ବର୍ତ୍ତମାନର ପାଣିପାଗ ଅନୁକୂଳ ଅଛି। ଢେଉର ଉଚ୍ଚତା 1.3 ମିଟର, ପବନ ବେଗ 18 ନଟ୍। ମାଛ ଧରିବା ପାଇଁ ସୁରକ୍ଷିତ।",
-        speechTomorrow: "ଆସନ୍ତାକାଲିର ପୂର୍ବାନୁମାନ: ତାପମାତ୍ରା 31 ଡିଗ୍ରୀ, ପବନ 24 ନଟ୍, ଢେଉ 2.1 ମିଟର। ସନ୍ଧ୍ୟା 5ଟା ପୂର୍ବରୁ କୂଳକୁ ଫେରନ୍ତୁ।",
-        speechBoundarySafe: "ଆନ୍ତର୍ଜାତୀୟ ସୀମାର ବର୍ତ୍ତମାନ ଦୂରତା 1,850 ମିଟର। ଆପଣ ସୁରକ୍ଷିତ ଭାବରେ ଭାରତୀୟ ଜଳସୀମା ମଧ୍ୟରେ ଅଛନ୍ତି।",
-        speechBoundary5Min: "ଚେତାବନୀ! ଆପଣ 5 ମିନିଟ୍ ମଧ୍ୟରେ ସାମୁଦ୍ରିକ ସୀମା ପାର ହେବାକୁ ଯାଉଛନ୍ତି! ତୁରନ୍ତ ଡଙ୍ଗାକୁ ଫେରାନ୍ତୁ!",
-        speechBoundaryBreach: "ଜରୁରୀ ଚେତାବନୀ! ଆପଣ ଆନ୍ତର୍ଜାତୀୟ ସୀମା ପାର ହୋଇଛନ୍ତି! ସାଇରନ୍ ବାଜୁଛି! ତୁରନ୍ତ ଫେରନ୍ତୁ!",
-        speechHarbor: "ନିକଟତମ ସୁରକ୍ଷିତ ବନ୍ଦର ମଣ୍ଡପମ ମତ୍ସ୍ୟଜୀବୀ ଜେଟି, ଦିଗ 254 ଡିଗ୍ରୀ ପଶ୍ଚିମ, ଦୂରତା 6.8 ନଟିକାଲ୍ ମାଇଲ୍।",
-        speechSos: "ଜରୁରୀ ସଂକେତ ପଠାଯାଇଛି! ଆପଣଙ୍କ GPS ଅବସ୍ଥିତି ଉପଗ୍ରହ ମାଧ୍ୟମରେ ଭାରତୀୟ କୋଷ୍ଟ ଗାର୍ଡ ମଣ୍ଡପମ ଷ୍ଟେସନକୁ ପଠାଯାଇଛି।",
-        speechStorm: "ଝଡ଼ ଚେତାବନୀ ସକ୍ରିୟ! ଆପଣଙ୍କ ଅଞ୍ଚଳରେ ଉଚ୍ଚ ଢେଉ ଏବଂ ପ୍ରବଳ ପବନ ଚିହ୍ନଟ ହୋଇଛି। ତୁରନ୍ତ ବନ୍ଦରକୁ ଫେରନ୍ତୁ।",
-        speechFuel: "ବଳକା ଇନ୍ଧନ 4 ଘଣ୍ଟା ଯାତ୍ରା ପାଇଁ ଯଥେଷ୍ଟ। ଦୟାକରି ଇନ୍ଧନ ସାଶ୍ରୟ କରି ଫେରିବା ଯାତ୍ରା ଯୋଜନା କରନ୍ତୁ।",
-        speechEngine: "ଇଞ୍ଜିନ୍ ସମସ୍ୟା ହେଲେ, ଡଙ୍ଗାକୁ ସୁରକ୍ଷିତ ଭାବରେ ଅଟକାନ୍ତୁ ଏବଂ ଇନ୍ଧନ ଲାଇନ୍ ଓ ପ୍ରୋପେଲର୍ ଯାଞ୍ଚ କରନ୍ତୁ। ଇଞ୍ଜିନ୍ ଷ୍ଟାର୍ଟ ନହେଲେ ତୁରନ୍ତ SOS ବଟନ୍ ଦବାନ୍ତୁ।",
-        speechGps: "ଆପଣଙ୍କ ବର୍ତ୍ତମାନର GPS ଅବସ୍ଥିତି ପ୍ରତ୍ୟକ୍ଷ ଭାବରେ ଟ୍ରାକ୍ ହୋଇ ଉପଗ୍ରହ ଓ ସେଲୁଲାର୍ ନେଟୱାର୍କ ମାଧ୍ୟମରେ କୋଷ୍ଟ ଗାର୍ଡ ମଣ୍ଡପମ ଷ୍ଟେସନକୁ ପଠାଯାଉଛି।",
-        speechFirstAid: "ଆଘାତ ଲାଗିଲେ ତୁରନ୍ତ ପ୍ରାଥମିକ ଚିକିତ୍ସା ଦିଅନ୍ତୁ: ସଫା କନାରେ ରକ୍ତସ୍ରାବ ବନ୍ଦ କରନ୍ତୁ, ବ୍ୟକ୍ତିଙ୍କୁ ଶାନ୍ତ ରଖନ୍ତୁ, ଡାକ୍ତରୀ ସାହାଯ୍ୟ ପାଇଁ SOS ବଟନ୍ ଦବାନ୍ତୁ।",
-        speechFishZone: "ଆପଣ ବର୍ତ୍ତମାନ ଏକ ସୁରକ୍ଷିତ ଏବଂ ଅନୁମୋଦିତ ମତ୍ସ୍ୟଚାଷ କ୍ଷେତ୍ରରେ ଅଛନ୍ତି। ଏହି ଉପକୂଳ ଜଳରେ ମାଛ ଧରିବା ଅନୁକୂଳ ଅଛି।",
-        speechCoastGuard: "ଭାରତୀୟ କୋଷ୍ଟ ଗାର୍ଡ ମଣ୍ଡପମ ଷ୍ଟେସନକୁ SOS ବଟନ୍ ମାଧ୍ୟମରେ ଯେକୌଣସି ସମୟରେ ଯୋଗାଯୋଗ କରାଯାଇପାରିବ। ସେମାନେ ଉପଗ୍ରହ ଓ ରାଡାର୍ ମାଧ୍ୟମରେ 24 ଘଣ୍ଟା ଏହି ଅଞ୍ଚଳକୁ ନିରୀକ୍ଷଣ କରନ୍ତି।",
-        speechThanks: "ସ୍ୱାଗତ! ସୁରକ୍ଷିତ ରୁହନ୍ତୁ ଏବଂ ଭଲ ମାଛ ଧରନ୍ତୁ। ଅଧିକ ସାହାଯ୍ୟ ଆବଶ୍ୟକ ହେଲେ ମୁଁ ଏଠାରେ ଅଛି।",
-        speechGreeting: "ନମସ୍କାର! ମୁଁ ଆପଣଙ୍କର THIRAIX ସାମୁଦ୍ରିକ ସୁରକ୍ଷା ସହାୟକ। ଆଜି ଆପଣଙ୍କୁ କିପରି ସାହାଯ୍ୟ କରିପାରିବି?"
-      },
-      pa: {
-        aiVoiceTitle: "THIRAIX AI ਆਵਾਜ਼ ਸਹਾਇਕ",
-        tapMicLabel: "ਬੋਲਣ ਲਈ ਮਾਈਕ ਦਬਾਓ",
-        micListening: "ਸੁਣ ਰਿਹਾ ਹਾਂ... ਹੁਣ ਆਪਣਾ ਸਵਾਲ ਬੋਲੋ",
-        orClickQuestion: "AI ਆਵਾਜ਼ ਸੁਣਨ ਲਈ ਕਿਸੇ ਸਵਾਲ 'ਤੇ ਕਲਿੱਕ ਕਰੋ:",
-        qWeather: "\"ਮੌਜੂਦਾ ਮੌਸਮ ਅਤੇ ਲਹਿਰਾਂ ਦੀ ਸਥਿਤੀ ਕੀ ਹੈ?\"",
-        qTomorrow: "\"ਕੱਲ੍ਹ ਦਾ ਮੌਸਮ ਪੂਰਵ ਅਨੁਮਾਨ ਕੀ ਹੈ?\"",
-        qBoundary: "\"ਸਰਹੱਦੀ ਰੇਖਾ ਤੋਂ ਦੂਰੀ ਕਿੰਨੀ ਹੈ?\"",
-        qHarbor: "\"ਨਜ਼ਦੀਕੀ ਸੁਰੱਖਿਅਤ ਬੰਦਰਗਾਹ ਕਿੱਥੇ ਹੈ?\"",
-        assistantReplyTitle: "THIRAIX AI ਸਮੁੰਦਰੀ ਆਵਾਜ਼ ਸਹਾਇਕ:",
-        assistantWelcome: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਮੈਂ ਤੁਹਾਡਾ THIRAIX ਸਮੁੰਦਰੀ ਸੁਰੱਖਿਆ ਸਹਾਇਕ ਹਾਂ। ਮੌਸਮ, ਸਰਹੱਦ, ਬੰਦਰਗਾਹ, ਤੂਫ਼ਾਨ, ਬਾਲਣ, ਇੰਜਣ, GPS, ਮੁੱਢਲੀ ਸਹਾਇਤਾ ਜਾਂ SOS ਬਾਰੇ ਪੁੱਛੋ — ਮੈਂ ਹਰ ਸਮੱਸਿਆ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦਾ ਹਾਂ।",
-        typeQuestionLabel: "ਜਾਂ ਆਪਣਾ ਸਵਾਲ ਟਾਈਪ ਕਰੋ:",
-        inputPlaceholder: "ਆਪਣਾ ਸਵਾਲ ਇੱਥੇ ਟਾਈਪ ਕਰੋ...",
-        btnAsk: "ਪੁੱਛੋ",
-        noAnswerFound: "ਮੈਂ ਮੌਸਮ, ਕੱਲ੍ਹ ਦੀ ਭਵਿੱਖਬਾਣੀ, ਸਰਹੱਦੀ ਦੂਰੀ, ਬੰਦਰਗਾਹ, ਤੂਫ਼ਾਨ, ਬਾਲਣ, ਇੰਜਣ ਸਮੱਸਿਆ, GPS ਟਿਕਾਣਾ, ਮੁੱਢਲੀ ਸਹਾਇਤਾ, ਮੱਛੀ ਫੜਨ ਵਾਲੇ ਖੇਤਰ, ਕੋਸਟ ਗਾਰਡ ਸੰਪਰਕ ਜਾਂ SOS ਬਾਰੇ ਮਦਦ ਕਰ ਸਕਦਾ ਹਾਂ। ਕਿਰਪਾ ਕਰਕੇ ਇਹਨਾਂ ਵਿੱਚੋਂ ਇੱਕ ਪੁੱਛੋ।",
-        speechWeather: "ਮੌਜੂਦਾ ਮੌਸਮ ਅਨੁਕੂਲ ਹੈ। ਲਹਿਰ ਦੀ ਉਚਾਈ 1.3 ਮੀਟਰ, ਹਵਾ ਦੀ ਗਤੀ 18 ਨਾਟ। ਮੱਛੀ ਫੜਨ ਲਈ ਸੁਰੱਖਿਅਤ।",
-        speechTomorrow: "ਕੱਲ੍ਹ ਦੀ ਭਵਿੱਖਬਾਣੀ: ਤਾਪਮਾਨ 31 ਡਿਗਰੀ, ਹਵਾ 24 ਨਾਟ, ਲਹਿਰਾਂ 2.1 ਮੀਟਰ। ਸ਼ਾਮ 5 ਵਜੇ ਤੋਂ ਪਹਿਲਾਂ ਕੰਢੇ 'ਤੇ ਵਾਪਸ ਆਓ।",
-        speechBoundarySafe: "ਅੰਤਰਰਾਸ਼ਟਰੀ ਸਰਹੱਦ ਤੋਂ ਮੌਜੂਦਾ ਦੂਰੀ 1,850 ਮੀਟਰ ਹੈ। ਤੁਸੀਂ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਭਾਰਤੀ ਜਲ ਸੀਮਾ ਦੇ ਅੰਦਰ ਹੋ।",
-        speechBoundary5Min: "ਚੇਤਾਵਨੀ! ਤੁਸੀਂ 5 ਮਿੰਟਾਂ ਵਿੱਚ ਸਮੁੰਦਰੀ ਸਰਹੱਦ ਪਾਰ ਕਰਨ ਜਾ ਰਹੇ ਹੋ! ਤੁਰੰਤ ਕਿਸ਼ਤੀ ਵਾਪਸ ਮੋੜੋ!",
-        speechBoundaryBreach: "ਐਮਰਜੈਂਸੀ ਚੇਤਾਵਨੀ! ਤੁਸੀਂ ਅੰਤਰਰਾਸ਼ਟਰੀ ਸਰਹੱਦ ਪਾਰ ਕਰ ਲਈ ਹੈ! ਸਾਇਰਨ ਵੱਜ ਰਿਹਾ ਹੈ! ਤੁਰੰਤ ਵਾਪਸ ਮੁੜੋ!",
-        speechHarbor: "ਨਜ਼ਦੀਕੀ ਸੁਰੱਖਿਅਤ ਬੰਦਰਗਾਹ ਮੰਡਪਮ ਫਿਸ਼ਰੀ ਜੈੱਟੀ ਹੈ, ਦਿਸ਼ਾ 254 ਡਿਗਰੀ ਪੱਛਮ, ਦੂਰੀ 6.8 ਨੌਟੀਕਲ ਮੀਲ।",
-        speechSos: "ਐਮਰਜੈਂਸੀ ਸਿਗਨਲ ਭੇਜਿਆ ਗਿਆ! ਤੁਹਾਡਾ GPS ਟਿਕਾਣਾ ਸੈਟੇਲਾਈਟ ਰਾਹੀਂ ਭਾਰਤੀ ਕੋਸਟ ਗਾਰਡ ਮੰਡਪਮ ਸਟੇਸ਼ਨ ਨੂੰ ਭੇਜਿਆ ਗਿਆ ਹੈ।",
-        speechStorm: "ਤੂਫ਼ਾਨ ਚੇਤਾਵਨੀ ਸਰਗਰਮ! ਤੁਹਾਡੇ ਖੇਤਰ ਵਿੱਚ ਉੱਚੀਆਂ ਲਹਿਰਾਂ ਅਤੇ ਤੇਜ਼ ਹਵਾਵਾਂ ਦਾ ਪਤਾ ਲੱਗਿਆ ਹੈ। ਤੁਰੰਤ ਬੰਦਰਗਾਹ ਵਾਪਸ ਜਾਓ।",
-        speechFuel: "ਬਾਕੀ ਬਚਿਆ ਬਾਲਣ 4 ਘੰਟੇ ਦੇ ਸਫ਼ਰ ਲਈ ਕਾਫ਼ੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਲਣ ਬਚਾਓ ਅਤੇ ਵਾਪਸੀ ਦੀ ਯੋਜਨਾ ਬਣਾਓ।",
-        speechEngine: "ਜੇ ਇੰਜਣ ਵਿੱਚ ਸਮੱਸਿਆ ਹੈ, ਕਿਸ਼ਤੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਰੋਕੋ ਅਤੇ ਬਾਲਣ ਲਾਈਨ ਅਤੇ ਪ੍ਰੋਪੈਲਰ ਦੀ ਜਾਂਚ ਕਰੋ। ਜੇ ਇੰਜਣ ਸਟਾਰਟ ਨਹੀਂ ਹੁੰਦਾ ਤਾਂ ਤੁਰੰਤ SOS ਬਟਨ ਦਬਾਓ।",
-        speechGps: "ਤੁਹਾਡਾ ਮੌਜੂਦਾ GPS ਟਿਕਾਣਾ ਲਾਈਵ ਟ੍ਰੈਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤੇ ਸੈਲੂਲਰ ਨੈੱਟਵਰਕ ਰਾਹੀਂ ਕੋਸਟ ਗਾਰਡ ਮੰਡਪਮ ਸਟੇਸ਼ਨ ਨੂੰ ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ।",
-        speechFirstAid: "ਸੱਟ ਲੱਗਣ 'ਤੇ ਤੁਰੰਤ ਮੁੱਢਲੀ ਸਹਾਇਤਾ ਦਿਓ: ਸਾਫ਼ ਕੱਪੜੇ ਨਾਲ ਖੂਨ ਵਹਿਣਾ ਰੋਕੋ, ਵਿਅਕਤੀ ਨੂੰ ਸ਼ਾਂਤ ਰੱਖੋ, ਡਾਕਟਰੀ ਮਦਦ ਲਈ SOS ਬਟਨ ਦਬਾਓ।",
-        speechFishZone: "ਤੁਸੀਂ ਇਸ ਵੇਲੇ ਇੱਕ ਸੁਰੱਖਿਅਤ ਅਤੇ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਮੱਛੀ ਫੜਨ ਵਾਲੇ ਖੇਤਰ ਵਿੱਚ ਹੋ। ਇਸ ਤੱਟਵਰਤੀ ਪਾਣੀ ਵਿੱਚ ਮੱਛੀ ਫੜਨ ਦੀ ਗਤੀਵਿਧੀ ਅਨੁਕੂਲ ਹੈ।",
-        speechCoastGuard: "ਭਾਰਤੀ ਕੋਸਟ ਗਾਰਡ ਮੰਡਪਮ ਸਟੇਸ਼ਨ ਨਾਲ SOS ਬਟਨ ਰਾਹੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਸੰਪਰਕ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। ਉਹ ਸੈਟੇਲਾਈਟ ਅਤੇ ਰਾਡਾਰ ਰਾਹੀਂ 24 ਘੰਟੇ ਇਸ ਖੇਤਰ ਦੀ ਨਿਗਰਾਨੀ ਕਰਦੇ ਹਨ।",
-        speechThanks: "ਸੁਆਗਤ ਹੈ! ਸੁਰੱਖਿਅਤ ਰਹੋ ਅਤੇ ਵਧੀਆ ਮੱਛੀ ਫੜੋ। ਜੇ ਹੋਰ ਮਦਦ ਚਾਹੀਦੀ ਹੋਵੇ ਤਾਂ ਮੈਂ ਇੱਥੇ ਹਾਂ।",
-        speechGreeting: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਮੈਂ ਤੁਹਾਡਾ THIRAIX ਸਮੁੰਦਰੀ ਸੁਰੱਖਿਆ ਸਹਾਇਕ ਹਾਂ। ਅੱਜ ਮੈਂ ਤੁਹਾਡੀ ਕਿਵੇਂ ਮਦਦ ਕਰ ਸਕਦਾ ਹਾਂ?"
-      },
-      ur: {
-        aiVoiceTitle: "THIRAIX AI صوتی معاون",
-        tapMicLabel: "بولنے کے لیے مائیک دبائیں",
-        micListening: "سن رہا ہوں... اب اپنا سوال بولیں",
-        orClickQuestion: "AI آواز سننے کے لیے سوال پر کلک کریں:",
-        qWeather: "\"موجودہ موسم اور لہروں کی صورتحال کیا ہے؟\"",
-        qTomorrow: "\"کل کی موسمی پیشگوئی کیا ہے؟\"",
-        qBoundary: "\"سرحدی لکیر تک فاصلہ کتنا ہے؟\"",
-        qHarbor: "\"قریب ترین محفوظ بندرگاہ کہاں ہے؟\"",
-        assistantReplyTitle: "THIRAIX AI بحری صوتی معاون:",
-        assistantWelcome: "السلام علیکم! میں آپ کا THIRAIX بحری حفاظتی معاون ہوں۔ موسم، سرحد، بندرگاہ، طوفان، ایندھن، انجن، GPS، ابتدائی طبی امداد یا SOS کے بارے میں پوچھیں — میں ہر مسئلے میں مدد کر سکتا ہوں۔",
-        typeQuestionLabel: "یا اپنا سوال ٹائپ کریں:",
-        inputPlaceholder: "اپنا سوال یہاں ٹائپ کریں...",
-        btnAsk: "پوچھیں",
-        noAnswerFound: "میں موسم، کل کی پیشگوئی، سرحدی فاصلہ، بندرگاہ، طوفان، ایندھن، انجن کا مسئلہ، GPS مقام، ابتدائی طبی امداد، ماہی گیری کا علاقہ، کوسٹ گارڈ رابطہ یا SOS کے بارے میں مدد کر سکتا ہوں۔ براہ کرم ان میں سے ایک پوچھیں۔",
-        speechWeather: "موجودہ موسم سازگار ہے۔ لہر کی اونچائی 1.3 میٹر، ہوا کی رفتار 18 ناٹ۔ ماہی گیری کے لیے محفوظ۔",
-        speechTomorrow: "کل کی پیشگوئی: درجہ حرارت 31 ڈگری، ہوا 24 ناٹ، لہریں 2.1 میٹر۔ شام 5 بجے سے پہلے ساحل پر واپس آئیں۔",
-        speechBoundarySafe: "بین الاقوامی سرحد سے موجودہ فاصلہ 1,850 میٹر ہے۔ آپ محفوظ طریقے سے بھارتی سمندری حدود میں ہیں۔",
-        speechBoundary5Min: "انتباہ! آپ 5 منٹ میں سمندری سرحد عبور کرنے والے ہیں! فوری طور پر کشتی واپس موڑیں!",
-        speechBoundaryBreach: "ہنگامی انتباہ! آپ بین الاقوامی سرحد عبور کر چکے ہیں! سائرن بج رہا ہے! فوری طور پر واپس مڑیں!",
-        speechHarbor: "قریب ترین محفوظ بندرگاہ منڈپم فشری جیٹی ہے، سمت 254 ڈگری مغرب، فاصلہ 6.8 ناٹیکل میل۔",
-        speechSos: "ہنگامی سگنل بھیج دیا گیا! آپ کا GPS مقام سیٹلائٹ کے ذریعے بھارتی کوسٹ گارڈ منڈپم اسٹیشن کو بھیج دیا گیا ہے۔",
-        speechStorm: "طوفان کا انتباہ فعال ہے! آپ کے علاقے میں بلند لہریں اور تیز ہوائیں محسوس کی گئی ہیں۔ فوری طور پر بندرگاہ واپس جائیں۔",
-        speechFuel: "باقی ماندہ ایندھن 4 گھنٹے کے سفر کے لیے کافی ہے۔ براہ کرم ایندھن بچائیں اور واپسی کا سفر منصوبہ بنائیں۔",
-        speechEngine: "اگر انجن میں خرابی ہو تو کشتی کو محفوظ طریقے سے روکیں اور ایندھن کی لائن اور پروپیلر چیک کریں۔ اگر انجن اسٹارٹ نہ ہو تو فوری طور پر SOS بٹن دبائیں۔",
-        speechGps: "آپ کا موجودہ GPS مقام لائیو ٹریک کیا جا رہا ہے اور سیٹلائٹ اور سیلولر نیٹ ورک کے ذریعے کوسٹ گارڈ منڈپم اسٹیشن کو بھیجا جا رہا ہے۔",
-        speechFirstAid: "چوٹ لگنے کی صورت میں فوری طور پر ابتدائی طبی امداد دیں: صاف کپڑے سے خون بہنا روکیں، شخص کو پرسکون رکھیں، طبی مدد کے لیے SOS بٹن دبائیں۔",
-        speechFishZone: "آپ اس وقت ایک محفوظ اور منظور شدہ ماہی گیری کے علاقے میں ہیں۔ اس ساحلی پانی میں ماہی گیری کی سرگرمی سازگار ہے۔",
-        speechCoastGuard: "بھارتی کوسٹ گارڈ منڈپم اسٹیشن سے SOS بٹن کے ذریعے کسی بھی وقت رابطہ کیا جا سکتا ہے۔ وہ سیٹلائٹ اور ریڈار کے ذریعے 24 گھنٹے اس علاقے کی نگرانی کرتے ہیں۔",
-        speechThanks: "خوش آمدید! محفوظ رہیں اور اچھی ماہی گیری کریں۔ اگر مزید مدد درکار ہو تو میں یہاں ہوں۔",
-        speechGreeting: "السلام علیکم! میں آپ کا THIRAIX بحری حفاظتی معاون ہوں۔ آج میں آپ کی کیسے مدد کر سکتا ہوں؟"
-      }
-    };
-
+    // Fallback dictionary for te, kn, ml, bn, or, pa, ur
     ['te', 'kn', 'ml', 'bn', 'or', 'pa', 'ur'].forEach(lang => {
-      I18N[lang] = Object.assign({}, I18N['en'], I18N_VOICE_EXTRA[lang]);
+      if (!I18N[lang]) I18N[lang] = I18N['en'];
     });
 
     /* =========================================================================
@@ -1682,11 +1404,7 @@
       const nativeVoice = voices.find(v => v.lang.startsWith(lang) || v.name.toLowerCase().includes(lang));
 
       let textToSpeak = text;
-      const FALLBACK_SPEECH_LOCALE = {
-        en: 'en-US', ta: 'ta-IN', hi: 'hi-IN', te: 'te-IN', kn: 'kn-IN',
-        ml: 'ml-IN', bn: 'bn-IN', or: 'or-IN', pa: 'pa-IN', ur: 'ur-IN'
-      };
-      let targetLang = FALLBACK_SPEECH_LOCALE[lang] || 'en-US';
+      let targetLang = lang === 'ta' ? 'ta-IN' : (lang === 'hi' ? 'hi-IN' : 'en-US');
 
       if (!nativeVoice) {
         // If on Windows and no Tamil voice pack is installed, speak phonetic romanized Tamil!
@@ -1745,11 +1463,7 @@
       try {
         window.speechSynthesis.cancel(); // Stop talking before listening
         recognitionInstance = new SpeechRecognition();
-        const SPEECH_RECOG_LOCALE = {
-          en: 'en-US', ta: 'ta-IN', hi: 'hi-IN', te: 'te-IN', kn: 'kn-IN',
-          ml: 'ml-IN', bn: 'bn-IN', or: 'or-IN', pa: 'pa-IN', ur: 'ur-IN'
-        };
-        recognitionInstance.lang = SPEECH_RECOG_LOCALE[state.lang] || 'en-US';
+        recognitionInstance.lang = state.lang === 'ta' ? 'ta-IN' : (state.lang === 'hi' ? 'hi-IN' : 'en-US');
         recognitionInstance.continuous = false;
         recognitionInstance.interimResults = false;
 
@@ -1788,56 +1502,20 @@
       if (statusLbl) statusLbl.innerText = (I18N[state.lang] || I18N.en).tapMicLabel;
     }
 
-    // Multilingual keyword router - understands weather, tomorrow, boundary, harbor,
-    // storm, fuel, engine, gps, first aid, fishing zone, coast guard, sos, thanks and
-    // greetings across all 10 supported languages, so the assistant can help with
-    // "every problem" whether the question is typed or spoken.
-    function processSpokenQuery(rawQuery) {
-      const query = (rawQuery || '').toLowerCase();
-      const has = (arr) => arr.some(k => query.includes(k));
-
-      if (has(['sos', 'emergency', 'distress', 'உதவி', 'காப்பாற்று', 'मदद', 'सहायता', 'సహాయం', 'ఆపద', 'ಸಹಾಯ', 'ಆಪತ್ತು', 'സഹായം', 'ആപത്ത്', 'সাহায্য', 'বিপদ', 'ସାହାଯ୍ୟ', 'ବିପଦ', 'ਮਦਦ', 'ਸੰਕਟ', 'مدد', 'ہنگامی'])) {
-        triggerEmergencySOS();
-      } else if (has(['storm', 'cyclone', 'gale', 'புயல்', 'तूफ', 'తుఫాను', 'ಚಂಡಮಾರುತ', 'കൊടുങ്കാറ്റ്', 'ঝড়', 'ଝଡ଼', 'ਤੂਫ਼ਾਨ', 'طوفان'])) {
-        handleVoiceQueryText('storm');
-      } else if (has(['fuel', 'petrol', 'diesel', 'எரிபொருள்', 'ईंधन', 'ఇంధనం', 'ಇಂಧನ', 'ഇന്ധനം', 'জ্বালানি', 'ଇନ୍ଧନ', 'ਬਾਲਣ', 'ایندھن'])) {
-        handleVoiceQueryText('fuel');
-      } else if (has(['engine', 'இயந்திரம்', 'इंजन', 'ఇంజిన్', 'ಎಂಜಿನ್', 'എഞ്ചിൻ', 'ইঞ্জিন', 'ଇଞ୍ଜିନ୍', 'ਇੰਜਣ', 'انجن'])) {
-        handleVoiceQueryText('engine');
-      } else if (has(['first aid', 'firstaid', 'injury', 'wound', 'முதலுதவி', 'प्राथमिक', 'ప్రథమ చికిత్స', 'ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ', 'പ്രഥമശുശ്രൂഷ', 'প্রাথমিক চিকিৎসা', 'ପ୍ରାଥମିକ ଚିକିତ୍ସା', 'ਮੁੱਢਲੀ ਸਹਾਇਤਾ', 'طبی امداد'])) {
-        handleVoiceQueryText('firstaid');
-      } else if (has(['fish', 'fishing', 'மீன்', 'मछली', 'చేపలు', 'ಮೀನು', 'മത്സ്യ', 'মাছ', 'ମାଛ', 'ਮੱਛੀ', 'ماہی'])) {
-        handleVoiceQueryText('fishzone');
-      } else if (has(['coast guard', 'coastguard', 'icg', 'காவல்படை', 'तटरक्षक', 'కోస్ట్ గార్డ్', 'ಕೋಸ್ಟ್ ಗಾರ್ಡ್', 'കോസ്റ്റ് ഗാർഡ്', 'কোস্ট গার্ড', 'କୋଷ୍ଟ ଗାର୍ଡ', 'ਕੋਸਟ ਗਾਰਡ', 'کوسٹ گارڈ'])) {
-        handleVoiceQueryText('coastguard');
-      } else if (has(['gps', 'location', 'இருப்பிடம்', 'स्थान', 'స్థానం', 'ಸ್ಥಳ', 'സ്ഥാനം', 'অবস্থান', 'ଅବସ୍ଥିତି', 'ਟਿਕਾਣਾ', 'مقام'])) {
-        handleVoiceQueryText('gps');
-      } else if (has(['boundary', 'border', 'distance', 'எல்லை', 'தூரம்', 'सीमा', 'दूरी', 'సరిహద్దు', 'ಗಡಿ', 'അതിർത്തി', 'সীমান্ত', 'ସୀମା', 'ਸਰਹੱਦ', 'سرحد'])) {
-        handleVoiceQueryText('boundary');
-      } else if (has(['harbor', 'harbour', 'port', 'jetty', 'துறைமுகம்', 'बंदरगाह', 'రేవు', 'ಬಂದರು', 'തുറമുഖം', 'বন্দর', 'ବନ୍ଦର', 'ਬੰਦਰਗਾਹ', 'بندرگاہ'])) {
-        handleVoiceQueryText('harbor');
-      } else if (has(['tomorrow', 'நாளை', 'कल', 'రేపు', 'ನಾಳೆ', 'നാളെ', 'আগামীকাল', 'ଆସନ୍ତାକାଲି', 'ਕੱਲ੍ਹ', 'کل'])) {
-        handleVoiceQueryText('tomorrow');
-      } else if (has(['weather', 'wave', 'wind', 'வானிலை', 'अल', 'मौसम', 'వాతావరణ', 'ಹವಾಮಾನ', 'കാലാവസ്ഥ', 'আবহাওয়া', 'ପାଣିପାଗ', 'ਮੌਸਮ', 'موسم'])) {
+    function processSpokenQuery(query) {
+      if (query.includes('weather') || query.includes('வானிலை') || query.includes('मौसम') || query.includes('వాతావరణ')) {
         handleVoiceQueryText('weather');
-      } else if (has(['thank', 'நன்றி', 'धन्यवाद', 'ధన్యవాదాలు', 'ಧನ್ಯವಾದ', 'നന്ദി', 'ধন্যবাদ', 'ଧନ୍ୟବାଦ', 'ਧੰਨਵਾਦ', 'شکریہ'])) {
-        handleVoiceQueryText('thanks');
-      } else if (has(['hello', 'hai', 'hi ', 'வணக்கம்', 'नमस्ते', 'नमस्कार', 'నమస్కారం', 'ನಮಸ್ಕಾರ', 'നമസ്കാരം', 'নমস্কার', 'ନମସ୍କାର', 'ਸਤ ਸ੍ਰੀ', 'السلام'])) {
-        handleVoiceQueryText('greeting');
+      } else if (query.includes('tomorrow') || query.includes('நாளை') || query.includes('कल') || query.includes('రేపు')) {
+        handleVoiceQueryText('tomorrow');
+      } else if (query.includes('boundary') || query.includes('border') || query.includes('distance') || query.includes('எல்லை') || query.includes('தூரம்') || query.includes('सीमा')) {
+        handleVoiceQueryText('boundary');
+      } else if (query.includes('harbor') || query.includes('port') || query.includes('துறைமுகம்') || query.includes('बंदरगाह')) {
+        handleVoiceQueryText('harbor');
+      } else if (query.includes('sos') || query.includes('help') || query.includes('உதவி') || query.includes('காப்பாற்று')) {
+        triggerEmergencySOS();
       } else {
-        handleVoiceQueryText('noanswer');
+        handleVoiceQueryText('weather');
       }
-    }
-
-    // Typed Question/Answer box - works with the same multilingual router as the
-    // voice assistant, so a question can be typed in any of the 10 languages too.
-    function handleTextQuery() {
-      const input = document.getElementById('text-query-input');
-      if (!input) return;
-      const query = input.value.trim();
-      if (!query) return;
-      processSpokenQuery(query);
-      input.value = '';
     }
 
     function handleVoiceQueryText(type) {
@@ -1866,36 +1544,6 @@
       } else if (type === 'harbor') {
         speech = t.speechHarbor;
         speechKey = 'speechHarbor';
-      } else if (type === 'storm') {
-        speech = t.speechStorm;
-        speechKey = 'speechStorm';
-      } else if (type === 'fuel') {
-        speech = t.speechFuel;
-        speechKey = 'speechFuel';
-      } else if (type === 'engine') {
-        speech = t.speechEngine;
-        speechKey = 'speechEngine';
-      } else if (type === 'gps') {
-        speech = t.speechGps;
-        speechKey = 'speechGps';
-      } else if (type === 'firstaid') {
-        speech = t.speechFirstAid;
-        speechKey = 'speechFirstAid';
-      } else if (type === 'fishzone') {
-        speech = t.speechFishZone;
-        speechKey = 'speechFishZone';
-      } else if (type === 'coastguard') {
-        speech = t.speechCoastGuard;
-        speechKey = 'speechCoastGuard';
-      } else if (type === 'thanks') {
-        speech = t.speechThanks;
-        speechKey = 'speechThanks';
-      } else if (type === 'greeting') {
-        speech = t.speechGreeting;
-        speechKey = 'speechGreeting';
-      } else if (type === 'noanswer') {
-        speech = t.noAnswerFound;
-        speechKey = null;
       } else {
         speech = t.assistantWelcome;
       }
@@ -2248,9 +1896,6 @@
       document.getElementById('chip-q-harbor').querySelector('span').innerText = t.qHarbor;
       document.getElementById('lbl-assistant-reply-title').innerText = t.assistantReplyTitle;
       document.getElementById('voice-response-text').innerText = t.assistantWelcome;
-      document.getElementById('lbl-type-question').innerText = t.typeQuestionLabel;
-      document.getElementById('text-query-input').setAttribute('placeholder', t.inputPlaceholder);
-      document.getElementById('lbl-btn-ask').innerText = t.btnAsk;
       document.getElementById('lbl-lora-title').innerText = t.loraTitle;
       document.getElementById('lbl-lora-status').innerText = t.loraStatusLbl;
       document.getElementById('lbl-telemetry-packets').innerText = t.telemetryPackets;
